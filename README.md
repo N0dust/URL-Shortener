@@ -10,11 +10,11 @@ POST http://127.0.0.1:8080/api/shorten
 json {"url" : "https://https://www.xxxx.com","expiration_in_mainutes" : 2}
 
 
-get respond json {"shortlink": "F"}
+get respond  {"shortlink": "F"}
 
-### get shorten information
+### Get shorten information
 GET http://127.0.0.1:8080/api/info?shortlink=F
 
-### redirect
+### Redirect
 browser http://127.0.0.1:8080/F
 
