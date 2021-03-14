@@ -7,11 +7,12 @@ import (
 	"strconv"
 )
 
-// Env is ...
+
 type Env struct {
 	S api.Storage
 }
 
+// connect Redis
 func getEnv() *Env {
 	addr := os.Getenv("APP_REDIS_ADDR")
 	if addr == "" {
