@@ -22,19 +22,19 @@ const (
 	ShortlinkDetailKey = "shortlink:%s:detail"
 )
 
-// RedisCli is ..
+
 type RedisCli struct {
 	Cli *redis.Client
 }
 
-// URLDetail is ..
+
 type URLDetail struct {
 	URL                 string        `json:"url"`
 	CreatedAt           string        `json:"created_at"`
 	ExpirationInMinutes time.Duration `json:"expiration_in_minutes"`
 }
 
-// NewRedisCli is ..
+
 func NewRedisCli(addr, passwd string, db int) *RedisCli {
 	client := redis.NewClient(&redis.Options{
 		Addr:     addr,
