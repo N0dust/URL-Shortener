@@ -48,7 +48,7 @@ func init() {
 
 func TestCreateShortlink(t *testing.T) {
 	var jsonStr = []byte(`{
-		"url": "https://www.qq.com"
+		"url": "https://www.qq.com",
 		"expiration_in_minutes": 60
 		}`)
 
